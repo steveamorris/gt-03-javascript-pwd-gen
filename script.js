@@ -9,11 +9,7 @@ function generatePassword() {
   var pwdLength = prompt(
     "Choose a number from 8 to 128.  We recomend 128, but play around with different combos."
   );
-  //  Error handling, if input < 8 or > 128 alert and break
-  if (pwdLength < 8 || pwdLength > 128) {
-    alert("You must enter a number between 8 and 128.  Try again");
-    break;
-  }
+
   // Create variable to store desired character types to include in password generated
   var charTypes = [];
   // Log it
@@ -54,6 +50,11 @@ function generatePassword() {
 
   // For Loop to iterate through 1 of 4 types of random character generators
   for (var i = 0; i < pwdLength; ++i) {
+    //  Error handling, if input < 8 or > 128 alert and break
+    if (pwdLength < 8 || pwdLength > 128) {
+      alert("You must enter a number between 8 and 128.  Try again");
+      break;
+    }
     // Error handling to determine if at least one character type is selected
     // If less than 1, alert and break
     if (charTypes.length < 1) {
