@@ -10,19 +10,19 @@ function generatePassword() {
   );
   var charTypes = [];
   console.log(pwdLength);
-  var lowCase = confirm("Would you like lowercased characters?");
+  var lowCase = confirm("Would you like lowercased characters? Press OK to Include and Cancel if not.");
   if (lowCase) {
     charTypes.push(0);
   }
-  var upCase = confirm("Would you like Uppercased characters?");
+  var upCase = confirm("Would you like Uppercased characters?  Press OK to Include and Cancel if not.");
   if (upCase) {
     charTypes.push(1);
   }
-  var nums = confirm("How about numbers?");
+  var nums = confirm("How about numbers?  Press OK to Include and Cancel if not.");
   if (nums) {
     charTypes.push(2);
   }
-  var specChars = confirm("And Spec!ci@l Ch@racter$?");
+  var specChars = confirm("And Spec!ci@l Ch@racter$?  Press OK to Include and Cancel if not.");
   if (specChars) {
     charTypes.push(3);
   }
