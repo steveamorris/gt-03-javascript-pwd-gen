@@ -33,6 +33,14 @@ function generatePassword() {
 
 
   for (var i = 0; i < pwdLength; ++i) {
+    if(pwdLength < 8 || pwdLength > 128) {
+      alert("You must enter a number between 8 and 128.  Try again");
+      break;
+    }
+    if(charTypes.length < 1) {
+      alert("You didn't select any character types. Try again");
+      break;
+    }
     
     var randomCharType = charTypes[Math.floor(Math.random() * charTypes.length)];
     console.log(randomCharType);
