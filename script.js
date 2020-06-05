@@ -26,11 +26,33 @@ function generatePassword() {
     charTypes.push(3);
   }
 
-  console.log(charTypes pwdLength);
+  console.log(charTypes);
+  var randomCharType = charTypes[Math.floor(Math.random() * charTypes.length)];
+  console.log(randomCharType);
 
+  // if(randomCharType === 0) {
+    console.log("Random lowercased character.");
+    var randomCharCode = (Math.floor(Math.random() * 25) + 97);
+    var asciiCode = String.fromCharCode(randomCharCode);
+    console.log(asciiCode);
 
+    console.log("Random uppercased character.");
+    var randomCharCode = (Math.floor(Math.random() * 25) + 65);
+    var asciiCode = String.fromCharCode(randomCharCode);
+    console.log(asciiCode);
 
+    console.log("Random number.");
+    var randomNum = (Math.floor(Math.random() * 9) + 1);
+    console.log(randomNum);
+
+    console.log("Random special character.");
+    var randomCharCode = (Math.floor(Math.random() * 14) + 33);
+    var asciiCode = String.fromCharCode(randomCharCode);
+    console.log(asciiCode);
+
+ 
 }
+
 
 
 // Write password to the #password input
