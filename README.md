@@ -1,4 +1,6 @@
 # gt-03-javascript-pwd-gen
+https://theendisfar.github.io/gt-03-javascript-pwd-gen/
+https://github.com/theendisfar/gt-03-javascript-pwd-gen
 
 # 03 JavaScript: Password Generator
 
@@ -124,4 +126,6 @@ Finally I added the FOR LOOP that created an empty String Var to store the Passw
 
 I console.log() that pwd and then Returned it.  Tested the App and it worked.
 
-Lastly I added some error handling to Alert user if they did not input the necessary requirements to geneerate a password.  Password Length less than * and greater than 128 results in an alert and a Break.  Same for an Array Length of 0 for charTypes.  I left the console.log()'s in so the functionality can easily be seen.  Console.log is my friend :)
+Lastly I added some error handling to Alert user if they did not input the necessary requirements to geneerate a password.  Password Length less than 8 and greater than 128 results in an alert and a Break.  Same for an Array Length of 0 for charTypes.  I left the console.log()'s in so the functionality can easily be seen.  Console.log is my friend :)
+
+Going back and writing comments for each step seemed to help reinforce my understanding of the problem and my solution.
